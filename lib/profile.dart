@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({ Key? key }) : super(key: key);
+  final String? name;
+  final int? age;
+  const ProfileScreen({this.name, this.age});
 
   @override
   Widget build(BuildContext context) {
@@ -18,24 +20,22 @@ class ProfileScreen extends StatelessWidget {
             ),
             Container(
               child: Text(
-                "Mr. Mehedi Hasan",
+                "$name",
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 28,
-                  fontFamily: "Lobster",
-                  fontWeight: FontWeight.w700
-                ),
+                    color: Colors.white,
+                    fontSize: 28,
+                    fontFamily: "Lobster",
+                    fontWeight: FontWeight.w700),
               ),
             ),
             Text(
-              "Flutter Developer",
+              "$age",
               style: TextStyle(
-                fontSize:24,
-                fontFamily: "SourceCodePro",
-                fontWeight: FontWeight.w500,
-                letterSpacing: 2.5,
-                color: Colors.white.withOpacity(0.75) 
-              ),
+                  fontSize: 24,
+                  fontFamily: "SourceCodePro",
+                  fontWeight: FontWeight.w500,
+                  letterSpacing: 2.5,
+                  color: Colors.white.withOpacity(0.75)),
             ),
             Divider(
               thickness: 1,
@@ -49,9 +49,7 @@ class ProfileScreen extends StatelessWidget {
               height: 48,
               padding: EdgeInsets.symmetric(horizontal: 15),
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5)
-              ),
+                  color: Colors.white, borderRadius: BorderRadius.circular(5)),
               child: Row(
                 children: [
                   Icon(
@@ -64,10 +62,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Text(
                     "+01482145215",
-                    style: TextStyle(
-                      color: Colors.teal,
-                      fontSize: 24
-                    ),
+                    style: TextStyle(color: Colors.teal, fontSize: 24),
                   )
                 ],
               ),
@@ -80,9 +75,7 @@ class ProfileScreen extends StatelessWidget {
               height: 48,
               padding: EdgeInsets.symmetric(horizontal: 15),
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5)
-              ),
+                  color: Colors.white, borderRadius: BorderRadius.circular(5)),
               child: Row(
                 children: [
                   Icon(
@@ -95,10 +88,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Text(
                     "mehedi@augnitive.com",
-                    style: TextStyle(
-                      color: Colors.teal,
-                      fontSize: 24
-                    ),
+                    style: TextStyle(color: Colors.teal, fontSize: 24),
                   )
                 ],
               ),

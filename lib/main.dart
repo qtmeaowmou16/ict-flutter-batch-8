@@ -1,5 +1,4 @@
-
-import 'package:demo_project/contact.dart';
+import 'package:demo_project/counter_app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,15 +8,16 @@ void main() {
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(
       //   fontFamily: "Lobster"
-      // ),  
+      // ),
       // home: HomePage()
       // home: ProfileScreen(),
-
-      home: ContactScreen(),
+      // home: ContactScreen(),
+      // home: ScreenOne(),
+      // home: ButtonScreen(),
+      // home: HomeScreen(),
+      // home: BmiScreen(),
+      // home: TextFieldScreen(),
+      home: CounterAppScreen(),
     ),
   );
 }
-
-
-
-
