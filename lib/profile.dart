@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
+<<<<<<< HEAD
   final String? name;
   final int? age;
   const ProfileScreen({this.name, this.age});
+=======
+
+  final String? name;
+  final int? age;
+  const ProfileScreen({this.name, this.age});
+
+>>>>>>> 601e54102a9d87930ae16a51b89420601f265601
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.symmetric(horizontal: 20  ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -21,11 +29,20 @@ class ProfileScreen extends StatelessWidget {
             Container(
               child: Text(
                 "$name",
+<<<<<<< HEAD
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 28,
                     fontFamily: "Lobster",
                     fontWeight: FontWeight.w700),
+=======
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 28,
+                  fontFamily: "Lobster",
+                  fontWeight: FontWeight.w700
+                ),
+>>>>>>> 601e54102a9d87930ae16a51b89420601f265601
               ),
             ),
             Text(

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import 'package:demo_project/screen_two.dart';
 import 'package:demo_project/screen_one.dart';
 import 'package:flutter/material.dart';
@@ -41,3 +42,34 @@ class _ScreenThreeState extends State<ScreenThree> {
     );
   }
 }
+=======
+import 'package:flutter/material.dart';
+
+class ScreenThree extends StatelessWidget {
+  const ScreenThree({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: Text("Screen Three"),
+        leading: IconButton(
+          onPressed: (){
+            Navigator.pop(context);
+          }, 
+          icon: Icon(Icons.arrow_back_ios)
+        ),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: (){
+            Navigator.pop(context);
+          }, 
+          child: Text("Back")
+       ),
+      ),
+    );
+  }
+}
+>>>>>>> 601e54102a9d87930ae16a51b89420601f265601

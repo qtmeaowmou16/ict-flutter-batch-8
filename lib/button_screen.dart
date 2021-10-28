@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
 class ButtonScreen extends StatelessWidget {
+<<<<<<< HEAD
   const ButtonScreen({Key? key}) : super(key: key);
+=======
+  const ButtonScreen({ Key? key }) : super(key: key);
+>>>>>>> 601e54102a9d87930ae16a51b89420601f265601
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       appBar: AppBar(
         title: Text("Button Screen"),
       ),
@@ -896,9 +901,72 @@ class ButtonScreen extends StatelessWidget {
                 ),
               ],
             )
+=======
+      appBar: AppBar(title: Text("Button Screen"),),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+
+            // ElevatedButton(
+            //   onPressed: (){}, 
+            //   child: Text("Sign in", style: TextStyle(fontSize: 24),),
+            //   style: ElevatedButton.styleFrom(
+            //     padding: EdgeInsets.symmetric(horizontal: 150, vertical: 22)
+            //   ),
+            // ),
+
+            SizedBox(
+              width: 100,
+              height: 100,
+              child: ElevatedButton(
+                onPressed: (){}, 
+                child: Text("Sign in", style: TextStyle(fontSize: 24),),
+                style: ElevatedButton.styleFrom(
+                  // padding: EdgeInsets.symmetric(horizontal: 150, vertical: 22),
+                  primary: Colors.red,
+                  elevation: 40,
+                  shadowColor: Colors.green,
+                  // shape: CircleBorder()
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    side: BorderSide(
+                      color: Colors.black,
+                      width: 3,
+                      style: BorderStyle.solid
+                    )
+                  )
+                ),
+              ),
+            ),
+
+            TextButton(
+              onPressed: (){}, 
+              child: Text("Sign in")
+            ),
+
+            OutlinedButton(
+              onPressed: (){}, 
+              child: Text("Sign in")
+            ),
+
+            ElevatedButton.icon(
+              onPressed: (){}, 
+              icon: Icon(Icons.facebook), 
+              label: Text("Log in with facebook")
+            )
+
+
+
+
+>>>>>>> 601e54102a9d87930ae16a51b89420601f265601
           ],
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 601e54102a9d87930ae16a51b89420601f265601
