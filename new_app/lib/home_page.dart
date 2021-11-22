@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, duplicate_ignore
-
 import 'package:flutter/material.dart';
 import 'package:new_app/screens/all.dart';
 import 'package:new_app/screens/business.dart';
@@ -15,7 +13,6 @@ class HomeScreen extends StatelessWidget {
     return DefaultTabController(
       length: 4,
       child: Scaffold(
-        // ignore: duplicate_ignore, duplicate_ignore
         appBar: AppBar(
           centerTitle: true,
           elevation: 10,
@@ -24,7 +21,7 @@ class HomeScreen extends StatelessWidget {
           iconTheme: IconThemeData(
             color: Colors.black,
           ),
-          title: Text(
+          title: const Text(
             "InterNational News",
             style: TextStyle(
               color: Colors.black,
@@ -34,20 +31,19 @@ class HomeScreen extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.notification_important,
               ),
             )
           ],
         ),
-        drawer: Drawer(),
+        drawer: const Drawer(),
         body: Column(
           children: const [
             TabBar(
               labelPadding: EdgeInsets.all(10),
               labelColor: Colors.blue,
               indicatorColor: Colors.black,
-              indicatorSize: TabBarIndicatorSize.tab,
               unselectedLabelColor: Colors.grey,
               tabs: [
                 Text("All"),
@@ -57,14 +53,12 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             Expanded(
-              child: TabBarView(
-                children: [
-                  AllScreen(),
-                  BusinessScreen(),
-                  GadgetsScreen(),
-                  SportsScreen(),
-                ],
-              ),
+              child: TabBarView(children: [
+                AllScreen(),
+                BusinessScreen(),
+                GadgetsScreen(),
+                SportsScreen(),
+              ]),
             ),
           ],
         ),
