@@ -10,6 +10,7 @@ class GridViewScreen extends StatelessWidget {
     Colors.green,
     Colors.teal,
     Colors.blue,
+    Colors.blueGrey,
   ];
 
   GridViewScreen({Key? key}) : super(key: key);
@@ -26,11 +27,11 @@ class GridViewScreen extends StatelessWidget {
         mainAxisSpacing: 10,
         padding: const EdgeInsets.all(10),
         children: List.generate(
-          7,
+          8,
           (index) {
             return Container(
-              height: 100,
-              width: 100,
+              height: 50,
+              width: 50,
               color: color[index],
               child: const FlutterLogo(),
             );
