@@ -16,16 +16,14 @@ class Rice extends StatelessWidget {
       itemCount: 2,
       padding: EdgeInsets.all(15),
       itemBuilder: (BuildContext context, int index) {
-        return Text("Dasta");
-        // return CustomGridTile(
-        //   onTap: () {
-        //     Navigator.pushNamed(context, DetailScreen.path,
-        //         arguments: rice[index]);
-        //   },
-        //   // imageUrl: rice[index]["image"],
-        //   title: "adhsa",
-        //   // totalIngredients: countIngredients(rice[index]["ingredients"]),
-        // );
+        return CustomGridTile(
+          onTap: () {
+            Navigator.pushNamed(context, DetailScreen.path,
+                arguments: rice[index]);
+          },
+          imageUrl: rice[index]["image"],
+          totalIngredients: countIngredients(rice[index]["ingredients"]),
+        );
       },
     );
   }
