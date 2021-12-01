@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:bdfoodrecipe/screen/bread/bread.dart';
-import 'package:bdfoodrecipe/screen/dessert/dessert.dart';
-import 'package:bdfoodrecipe/screen/fast_food/fast_food.dart';
-import 'package:bdfoodrecipe/screen/non_veg/non_veg.dart';
-import 'package:bdfoodrecipe/screen/rice/rice.dart';
+import 'package:bdfoodrecipe/screens/bread/bread.dart';
+import 'package:bdfoodrecipe/screens/dessert/dessert.dart';
+import 'package:bdfoodrecipe/screens/fast_food/fast_food.dart';
+import 'package:bdfoodrecipe/screens/non_veg/non_veg.dart';
+import 'package:bdfoodrecipe/screens/rice/rice.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

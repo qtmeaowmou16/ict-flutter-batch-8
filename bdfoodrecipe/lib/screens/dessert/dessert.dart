@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:bdfoodrecipe/data.dart';
 import 'package:bdfoodrecipe/global/functions.dart';
@@ -13,7 +13,7 @@ class Dessert extends StatelessWidget {
     return GridView.builder(
       gridDelegate: customGridDelegate(),
       itemCount: dessert.length,
-      padding: const EdgeInsets.all(15),
+      padding: EdgeInsets.all(15),
       itemBuilder: (BuildContext context, int index) {
         return CustomGridTile(
           imageUrl: dessert[index]["image"],

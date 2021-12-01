@@ -1,11 +1,10 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:bdfoodrecipe/data.dart';
 import 'package:bdfoodrecipe/global/functions.dart';
 import 'package:bdfoodrecipe/widget/custom_grid_tile.dart';
 import 'package:flutter/material.dart';
 
-// ignore: use_key_in_widget_constructors
 class NonVeg extends StatelessWidget {
   final List nonVeg = bdfood["non_veg"];
 
